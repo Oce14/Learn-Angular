@@ -1,0 +1,6 @@
+<div class="h-screen w-screen flex justify-center items-center">
+    <div class="h-full w-full flex flex-col justify-center items-center">
+        <app-fruits *ngIf="fruitsParent.length > 0" [fruitsEnfant]="fruitsParent" class="w-full pb-8"></app-fruits>
+        <app-create-fruit (fruitAdded)="addFruitToFruits($event)"></app-create-fruit>
+    </div>
+</div>  

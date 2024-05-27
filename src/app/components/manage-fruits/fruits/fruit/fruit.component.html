@@ -1,0 +1,12 @@
+<mat-card class="mat-elevation-z8 justify-center items-center w-4/5 p-4">
+    <div class="flex flex-row w-full">
+        <div class="w-1/6">
+            <mat-icon>restaurant</mat-icon>
+        </div>
+        <div class="w-1/6 ">{{fruit.type}}</div>
+        <div class="w-1/6">{{fruit.quantity}}</div>
+        <div class="w-1/6 ">{{fruit.color}}</div>
+        <button mat-raised-button color="primary" class="w-1/6 mr-4" (click)="editFruit()">Edit</button>
+        <button mat-raised-button color="warn"  class="w-1/6 " (click)="deleteFruit()">Delete</button>
+    </div>
+</mat-card>

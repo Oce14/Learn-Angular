@@ -1,15 +1,19 @@
 import { Component } from '@angular/core';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatButtonModule } from '@angular/material/button';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [
-    MatSlideToggleModule,
-  ],
+  imports: [MatButtonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
 
+  constructor(private router: Router) { }
+  
+  redirectToFruit(){
+    this.router.navigate(['/fruits']);
+  }
 }

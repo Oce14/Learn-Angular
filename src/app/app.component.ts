@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { RouterModule, RouterOutlet } from '@angular/router';
+
 import { HomeComponent } from "./components/home/home.component";
 
 @Component({
@@ -10,7 +10,7 @@ import { HomeComponent } from "./components/home/home.component";
     styleUrl: './app.component.scss',
     imports: [
         RouterOutlet,
-        MatSlideToggleModule,
+        RouterModule,
         HomeComponent,
     ]
 })
