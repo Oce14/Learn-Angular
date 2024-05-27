@@ -20,9 +20,5 @@ This is a simple application that allows users to add fruits to a list and then 
 
 ## License
 This project is licensed under the MIT license.
-```
 
-### Output
-```markdown
-# Fruit Market
 
